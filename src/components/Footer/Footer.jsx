@@ -4,7 +4,7 @@ import LinkedIn from "../../assets/images/LinkedIn.svg";
 import Insta from "../../assets/images/Insta.svg";
 import Whatsapp from "../../assets/images/Whatsapp.svg";
 import Phone from "../../assets/images/phone.svg";
-import Whatsappftr from "../../assets/images/whatsappftr.svg";
+import Whatsappftr from "../../assets/images/Whatsapp.svg";
 import msg from "../../assets/images/message.svg";
 import "./Footer.css";
 
