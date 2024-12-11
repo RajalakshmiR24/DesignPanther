@@ -1,0 +1,39 @@
+/* General Section Styling */
+.home-section {
+  /* padding: 20px; */
+}
+
+/* Carousel container for spacing on smaller devices */
+/* .carousel-container {
+  padding: 0 15px;
+} */
+
+/* Static content background */
+.static-content {
+  background-color: #0f0f0f;
+  padding: 1.78vw;
+}
+
+.static-image {
+  max-height: 440px;
+  width: 100%; /* Ensures it fits within container on smaller devices */
+  /* object-fit: contain; */
+}
+
+@media (max-width: 576px) {
+  /* .home-section {
+    padding: 10px;
+  } */
+  .static-content {
+    padding: 15px;
+  }
+}
+
+/* For medium screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .static-image {
+    max-height: 400px; /* Prevents overflow */
+  }
+}
+
+/* For large screens (default styles apply) */

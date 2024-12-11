@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* overflow-x: hidden; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  pointer-events: auto;
+}
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  background-color: black;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  transition: transform 0.1s;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  section {
+    padding-top: 20px;
+  }
+}

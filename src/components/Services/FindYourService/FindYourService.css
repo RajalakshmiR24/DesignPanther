@@ -1,0 +1,134 @@
+.findservice-container {
+  margin: 0 auto;
+  text-align: center;
+}
+.findservice-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.imgfindYourService {
+  height: 300px;
+}
+.serviceCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+}
+
+.Technologies_Main_Control_Div {
+  overflow: hidden;
+}
+
+.technology_outer_div {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 3% 5% 1% 5%;
+  position: sticky;
+  z-index: 1;
+  border-radius: 2vw 2vw 0px 0px;
+}
+
+.technology_header_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.technology_header_para_1 {
+  font-size: clamp(20px, 2.35vw, 120px);
+  font-weight: 700;
+  background-image: linear-gradient(90deg, #764c9e 0%, #6a76b8 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  word-wrap: break-word;
+}
+
+.technology_header_para_2 {
+  font-size: clamp(7px, 1.2vw, 75px);
+  font-weight: 500;
+  color: #424242;
+  text-align: center;
+  line-height: 2vw;
+  word-wrap: break-word;
+}
+
+.scroll-container {
+  height: 110vh;
+  width: 100%;
+}
+
+.scroll-main {
+  position: sticky;
+  top: 0;
+  height: 80vh;
+  width: 95%;
+  overflow: hidden;
+  display: flex;
+  padding: 0 5%;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #ffffff;
+}
+
+.tech-service {
+  display: flex;
+  gap: calc(10vw / 3);
+}
+
+.tech-service div {
+  min-width: calc(80vw / 3);
+  max-width: calc(80vw / 3);
+}
+
+.tech-service div img {
+  width: 100%;
+}
+
+.tech-service div h3 {
+  margin-top: 3%;
+  font-size: clamp(14px, 1.1vw, 70px);
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  .technology_header_para_1 {
+    font-size: clamp(15px, 4.8vw, 20px);
+    line-height: 8vw;
+  }
+
+  .technology_header_para_2 {
+    font-size: clamp(9px, 3.1vw, 13px);
+    line-height: 4vw;
+  }
+
+  .scroll-main {
+    justify-content: space-evenly;
+  }
+
+  .tech-service {
+    gap: 10vw;
+  }
+
+  .tech-service div {
+    min-width: 90vw;
+    max-width: 90vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scroll-container {
+    height: 500vh;
+  }
+
+  .tech-service {
+    gap: 10vw;
+  }
+
+  .tech-service div {
+    min-width: 90vw;
+    max-width: 90vw;
+  }
+}

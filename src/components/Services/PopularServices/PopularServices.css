@@ -1,0 +1,97 @@
+.popular-services {
+  background-color: #f9f9f9;
+}
+
+/* General Styles */
+.popularserv-section {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.popularserv-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.popularserv-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card img {
+  max-height: 150px;
+  object-fit: contain;
+}
+
+h5 {
+  color: #333;
+}
+
+/* Custom style for thin scrollbar */
+.row.overflow-x-auto {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scrollbar-width: thin; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
+}
+
+.row.overflow-x-auto::-webkit-scrollbar {
+  height: 6px; /* Adjust the height for a thinner scrollbar */
+}
+
+.row.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: #000; /* Black color for the thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.row.overflow-x-auto::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+/* For custom horizontal scrollbar */
+.services-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+/* Thin scrollbar */
+.services-scroll-container::-webkit-scrollbar {
+  height: 8px; /* Controls the height of the horizontal scrollbar */
+}
+
+.services-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #ffffffee; /* Black color for the thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.services-scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light background for the scrollbar track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Style for the service cards */
+.service-card {
+  min-width: 250px;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.service-card img {
+  max-height: 150px;
+  object-fit: contain;
+}

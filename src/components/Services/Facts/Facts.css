@@ -1,0 +1,71 @@
+.facts-section {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.facts-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.facts-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Fade Animation */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.tab-content img {
+  width: 80%;
+  /* max-width: 800px; */
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* .tab-content img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+} */
+
+.factsButton {
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
+}
+
+.factsButton > .bg-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.factsButton > .bg-white {
+  background-color: #fff;
+  color: #000;
+}

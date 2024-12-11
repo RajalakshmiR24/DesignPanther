@@ -1,0 +1,262 @@
+/* Main modal dialog */
+.modal-dialog {
+  max-width: 1200px;
+  width: 100%;
+  margin: 5% auto;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* Modal content */
+.modal-content {
+  display: flex;
+  flex-direction: row;
+  border-radius: 0px;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Images container */
+.images-container {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  position: relative;
+  padding-top: 30%;
+}
+
+/* Image styling */
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Content section */
+.content-section {
+  flex: 1.5;
+  padding: 0.5rem;
+}
+
+/* Modal header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Modal title */
+.modal-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Description text */
+.description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Grid section */
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.grid-section h6 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.grid-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Features section */
+.features-section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item p {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* Modal footer */
+.modal-footer {
+  text-align: center;
+}
+
+.footer-button {
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Fixed position for service buttons */
+.button-modals {
+  position: fixed;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 0.3rem;
+  z-index: 1000;
+}
+
+/* Button container styling */
+.button-containers {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.buttons {
+  padding: 0.5rem 2.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+  border: 1px solid black;
+  border-radius: 0px;
+}
+
+.buttons.active {
+  background-color: black;
+  color: white;
+}
+
+.buttons.inactive {
+  background-color: white;
+  color: gray;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .images-container {
+    padding: 3rem;
+    grid-template-columns: 1fr;
+    padding-top: 20%;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .content-section {
+    flex: 1;
+    padding: 1rem;
+  }
+
+  .grid-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .features-section {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+
+  .footer-button {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .button-modals {
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .buttons {
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+  .modal-content {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .images-container {
+    padding: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 25%;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .content-section {
+    flex: 1;
+    padding: 1rem;
+  }
+
+  .grid-section {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .features-section {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+
+  .footer-button {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .button-modals {
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .buttons {
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,88 @@
+.navbar {
+  font-size: 18px;
+  letter-spacing: 2px;
+  top: 0;
+  z-index: 9999;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(255, 251, 251, 0.7);
+  transition: background-color 0.3s ease;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-bg {
+  background-color: rgba(255, 255, 255, 0.869);
+  /* background-color: transparent; */
+  transition: background-color 0.3s ease;
+}
+
+.nav-link {
+  transition: color 0.3s ease, font-weight 0.3s ease;
+  color: #333;
+  margin-right: 20px;
+  padding: 10px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: auto;
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #000;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #000;
+}
+
+.navbar-nav .btn {
+  background-color: #000;
+  color: #fff;
+  border-radius: 0;
+  padding: 5px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #000;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    margin-right: 0;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navbar-nav .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
